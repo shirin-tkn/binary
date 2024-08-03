@@ -1,0 +1,15 @@
+def binary(binary_number):
+
+    my_list=[]
+    for number in binary_number:
+        int_number = int(number,2)
+        if int_number % 5 == 0:
+            num = number
+            my_list.append(str(num))
+    result=",".join(my_list)
+    print(result)
+
+
+if __name__ == '__main__':
+    binary_number = input("Enter a binary number: ").split(",")
+    binary(binary_number)
